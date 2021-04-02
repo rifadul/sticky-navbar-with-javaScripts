@@ -1,38 +1,41 @@
 
 "use strict";
 
-
-// fst way
+// **********************************
+// first way to add sticky navbar
+// **********************************
 
 // window.onscroll = function() {myFunction()};
-
 // function myFunction() {
 //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("myP").className = "navbar navbar-expand-lg navbar-light sticky-top test";
+//     document.getElementById("navbar_id").className = "navbar navbar-expand-lg navbar-light sticky-top navbar_bg_Color";
 //   } else {
-//     document.getElementById("myP").className = "navbar navbar-expand-lg navbar-light sticky-top";
+//     document.getElementById("navbar_id").className = "navbar navbar-expand-lg navbar-light sticky-top";
 //   }
 // }
 
 
-// second way
+// **********************************
+// second way to add sticky navbar
+// **********************************
 
 // window.onscroll = function() {
 // 	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("myP").className = "navbar navbar-expand-lg navbar-light sticky-top test";
+//     document.getElementById("navbar_id").className = "navbar navbar-expand-lg navbar-light sticky-top navbar_bg_Color";
 //   } else {
-//     document.getElementById("myP").className = "navbar navbar-expand-lg navbar-light sticky-top";
+//     document.getElementById("navbar_id").className = "navbar navbar-expand-lg navbar-light sticky-top";
 //   }
 // };
 
 
-
-// recomend way
+// --------------------------------------------
+// recommended way to add sticky navbar
+// ---------------------------------------------
 window.onscroll = function() {
 	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("myP").classList.add('test');
+    document.getElementById("navbar_id").classList.add('navbar_bg_Color');
   } else {
-    document.getElementById("myP").classList.remove('test');
+    document.getElementById("navbar_id").classList.remove('navbar_bg_Color');
   }
 };
 
